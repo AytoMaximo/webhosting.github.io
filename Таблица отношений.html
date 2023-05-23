@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Таблица отношений</title>
+<style>
+	table{
+			height:200px;
+			width: 850px; 
+			border-collapse:collapse; 
+			border-color:#009;
+			position:relative;
+	}
+	
+	td{
+		border:inset;
+	}
+	}		
+td:before{
+	display:block;
+	background:#BFD8FF;
+}	
+td:hover{
+	background:#33C;
+	font-weight:bold;
+	color:#FFF;	
+}
+td:hover:before{
+	background:#000;	
+}
+tr:hover{
+	background:#BFD8FF;
+}
+td:hover:after{
+	content:"";
+	position:absolute;
+	display:block;
+	width:87px;
+	height:100%;
+	top:0;
+	background:#BFD8FF;
+	z-index:-2;
+}
+tr#title:hover{
+				background:#FFF;
+}
+td#title:hover{
+				background:#33C;
+}
+td#title:hover:after{
+	content:"";
+	position:absolute;
+	display:block;
+	width:68px;
+	height:100%;
+	top:0;
+	background:#FFF;
+	z-index:-2;
+}
+</style>	
+</head>
+
+<body>
+<table border="1">
+  <tr>
+    <td colspan="2" rowspan="2" id="title">&nbsp;</td>
+    <td colspan="8" id="title"><img src="Картинки/Ваш тип.jpg" width="720" height="22" /></td>
+  </tr>
+  <tr id="title">
+    <td width="62" align="center">Дон Кихот</td>
+    <td width="62" align="center">Дюма</td>
+    <td width="62" align="center">Гюго</td>
+    <td width="62" align="center">Робеспьер</td>
+    <td width="62" align="center">Гамлет</td>
+    <td width="62" align="center">Максим</td>
+    <td width="62" align="center">Жуков</td>
+    <td width="62" align="center">Есенин</td>
+  </tr>
+  <tr>
+    <td width="15" rowspan="16" align="center" id="title"><p><img src="Картинки/Тип вашего партнера.jpg" width="22" height="465" /></p></td>
+    <td width="94" height="26" id="title">Дон Кихот</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+    <td align="center">д</td>
+    <td align="center">М</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Дюма</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Гюго</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Робеспьер</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Гамлет</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Максим</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Жуков</td>
+    <td align="center">д</td>
+    <td align="center">М</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Есенин</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Наполеон</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Бальзак</td>
+    <td align="center">пп</td>
+    <td align="center">э</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Джек</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+    <td align="center">д</td>
+    <td align="center">М</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Драйзер</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+    <td align="center">пп</td>
+    <td align="center">сэ</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Штирлиц</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+    <td align="center">д</td>
+    <td align="center">М</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Достоевский</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+    <td align="center">пп</td>
+    <td align="center">сэ</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Гексли</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Габен</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+    <td align="center">пп</td>
+    <td align="center">сэ</td>
+  </tr>
+</table>
+<br />
+<table border="1">
+  <tr>
+    <td colspan="2" rowspan="2" id="title">&nbsp;</td>
+    <td colspan="8" id="title"><img src="Картинки/Ваш тип.jpg" width="720" height="22" /></td>
+  </tr>
+  <tr>
+    <td width="62" align="center">Наполеон</td>
+    <td width="62" align="center">Бальзак</td>
+    <td width="62" align="center">Джек</td>
+    <td width="62" align="center">Драйзер</td>
+    <td width="62" align="center">Штирлиц</td>
+    <td width="62" align="center">Достоев-ский</td>
+    <td width="62" align="center">Гексли</td>
+    <td width="62" align="center">Габен</td>
+  </tr>
+  <tr>
+    <td width="15" rowspan="16" align="center" id="title"><img src="Картинки/Тип вашего партнера.jpg" width="22" height="465" /></td>
+    <td width="94" height="26" id="title">Дон Кихот</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Дюма</td>
+    <td align="center">пп</td>
+    <td align="center">сэ</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Гюго</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+    <td align="center">д</td>
+    <td align="center">М</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Робеспьер</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+    <td align="center">пп</td>
+    <td align="center">сэ</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Гамлет</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+    <td align="center">д</td>
+    <td align="center">М</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Максим</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+    <td align="center">пп</td>
+    <td align="center">сэ</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Жуков</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+    <td align="center">кт</td>
+    <td align="center">К</td>
+    <td align="center">сэ</td>
+    <td align="center">пп</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Есенин</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+    <td align="center">К</td>
+    <td align="center">кт</td>
+    <td align="center">пп</td>
+    <td align="center">сэ</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Наполеон</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+    <td align="center">д</td>
+    <td align="center">м</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Бальзак</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Джек</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Драйзер</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Штирлиц</td>
+    <td align="center">П</td>
+    <td align="center">Р</td>
+    <td align="center">ро</td>
+    <td align="center">пД</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Достоевский</td>
+    <td align="center">Р</td>
+    <td align="center">П</td>
+    <td align="center">пД</td>
+    <td align="center">ро</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Гексли</td>
+    <td align="center">д</td>
+    <td align="center">М</td>
+    <td align="center">п</td>
+    <td align="center">р</td>
+    <td align="center">А</td>
+    <td align="center">З</td>
+    <td align="center">Т</td>
+    <td align="center">Д</td>
+  </tr>
+  <tr>
+    <td height="26" id="title">Габен</td>
+    <td align="center">М</td>
+    <td align="center">д</td>
+    <td align="center">р</td>
+    <td align="center">п</td>
+    <td align="center">З</td>
+    <td align="center">А</td>
+    <td align="center">Д</td>
+    <td align="center">Т</td>
+  </tr>
+</table>
+
+</body>
+</html>
